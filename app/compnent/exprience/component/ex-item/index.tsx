@@ -6,7 +6,7 @@ type ExItemType = {
 const ExItem = ({ exName, textColor, className }: ExItemType) => {
   return (
     <div
-      className={`absolute ${className} bg-white rounded-full px-6 py-1 text-lg ${
+      className={`absolute ${className} bg-white rounded-full px-6 py-1 text-lg translate-y-[70%] ${
         textColor ?? "text-[#000000]"
       } 
       font-bold w-fit text-center shadow-[4px_4px_4.7px_0px_rgba(0,0,0,0.25)]`}

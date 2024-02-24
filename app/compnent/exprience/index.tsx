@@ -20,9 +20,9 @@ const Exprience = () => {
     // absolute right-0
     <div className="relative w-[50%] h-[85%] border border-blue-800">
       {/* <div className="top-56"></div> */}
+      <Circle left="left-[46%]" />
       <Circle />
-      <Circle />
-      <Circle />
+      <Circle left="left-[54%]" />
       {ex.map((it, index) => (
         <ExItem
           key={index}

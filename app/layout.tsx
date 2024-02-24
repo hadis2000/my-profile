@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import localFont from "next/font/local";
+
+const myFont = localFont({ src: "./asset/font/KaushanScript-Regular.otf" });
 
 export const metadata: Metadata = {
   title: "پروفایل من",
@@ -13,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <body>{children}</body>
+      <body className={myFont.className}>{children}</body>
     </html>
   );
 }
