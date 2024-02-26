@@ -10,9 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         defaultPink: {
+          50: "#ECE3F3",
           500: "#C23489",
         },
         defaultBlue: {
+          50: "#EAFAFE",
           500: "",
         },
       },

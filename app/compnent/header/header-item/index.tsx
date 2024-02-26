@@ -2,7 +2,7 @@ const HeadrItem = ({ name }: { name: string }) => {
   return (
     <li
       className="font-bold list-none text-xl cursor-pointer border-transparent 
-       relative group hover:text-transparent"
+       relative group hover:text-gray-700"
     >
       {/* <span className="border-b-2 border-defaultPink-500 absolute bottom-0 left-[50%] group-hover:w-[50%] group-hover:animate-width"></span>
       <span className="border-b-2 border-defaultPink-500 absolute bottom-0 right-[50%] group-hover:w-[50%] group-hover:animate-width"></span> */}
