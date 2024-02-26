@@ -12,10 +12,15 @@ const config: Config = {
         defaultPink: {
           50: "#ECE3F3",
           500: "#C23489",
+          600: "#DC677F",
         },
         defaultBlue: {
           50: "#EAFAFE",
-          500: "",
+          500: "#ACD4FB",
+        },
+
+        defaultGray: {
+          500: "#00011cb1",
         },
       },
       backgroundImage: {
