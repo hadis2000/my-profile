@@ -17,9 +17,10 @@ const Exprience = () => {
     // { name: "api", className: "top-7 left-7", color: "text-[#542E13]" },
   ];
   return (
-    // absolute right-0
-    <div className="relative w-[50%] h-[85%] border border-blue-800">
-      {/* <div className="top-56"></div> */}
+    <div
+      className="relative lg:w-[50%] w-full lg:mx-0 mx-auto 
+    h-[400px] py-14 lg:my-10 my-0"
+    >
       <Circle left="left-[46%]" />
       <Circle />
       <Circle left="left-[54%]" />

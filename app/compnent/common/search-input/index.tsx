@@ -1,6 +1,6 @@
 const SearchInput = () => {
   return (
-    <div className="border border-gray-300 bg-white w-fit rounded-full my-7 md:mx-0 mx-auto">
+    <div className="border border-gray-300 bg-white w-fit rounded-full my-7 lg:mx-0 mx-auto">
       <input
         className="rounded-full mx-2 focus:outline-none p-1"
         placeholder="Search..."

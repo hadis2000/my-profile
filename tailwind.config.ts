@@ -16,6 +16,8 @@ const config: Config = {
         },
         defaultBlue: {
           50: "#EAFAFE",
+          300: "#E5F2FF",
+          400: "#D1E6FC",
           500: "#ACD4FB",
         },
 
