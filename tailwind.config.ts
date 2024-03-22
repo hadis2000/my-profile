@@ -39,10 +39,21 @@ const config: Config = {
           "0%": { width: "0%" },
           "100%": { width: "100%" },
         },
+        headerAnim: {
+          "0%": {
+            width: "40%",
+            opacity: "0",
+          },
+          "100%": {
+            width: "90%",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         width: "width 0.3s linear",
-        width100: "width100 0.7s linear",
+        width100: "width100 0.5s linear",
+        headerAnim: "headerAnim 2s linear",
       },
     },
   },
