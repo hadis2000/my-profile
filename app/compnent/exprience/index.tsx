@@ -1,3 +1,4 @@
+import AllExpriences from "./component/all-exprience";
 import Cirlces from "./component/circles";
 
 const Exprience = () => {
@@ -7,6 +8,7 @@ const Exprience = () => {
     h-[460px] lg:my-10 my-0"
     >
       <Cirlces />
+      <AllExpriences />
     </div>
   );
 };
