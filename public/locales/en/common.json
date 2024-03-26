@@ -1,3 +1,12 @@
 {
-  "hello": "Hi There"
+  "hello": "Hi There",
+  "im": "Im",
+  "my-name": "Hadiseh Hosseini",
+  "into-dev": "Im into web develop",
+  "search": "Search",
+  "go": "Go",
+  "telegram": "Telegram",
+  "instagram": "Instagram",
+  "linkdin": "Linkdin",
+  "header": ["home", "about", "skills", "works", "contact us"]
 }
