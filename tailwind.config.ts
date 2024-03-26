@@ -49,11 +49,16 @@ const config: Config = {
             opacity: "1",
           },
         },
+        translateX: {
+          "0% 100%": { left: "45%" },
+          "50%": { left: "50%" },
+        },
       },
       animation: {
         width: "width 0.3s linear",
         width100: "width100 0.5s linear",
         headerAnim: "headerAnim 2s linear",
+        translateX: "translateX 3s infinite",
       },
     },
   },
