@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type langType = "fa" | "en";
+export type langType = "fa" | "en";
 
 type languageType = {
   lang: langType;
@@ -8,6 +8,6 @@ type languageType = {
 };
 
 export const useLanguage = create<languageType>()((set) => ({
-  lang: "en",
+  lang: "fa",
   setLan: () => set((state) => ({ lang: state.lang == "en" ? "fa" : "en" })),
 }));

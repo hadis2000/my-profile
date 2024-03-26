@@ -1,7 +1,10 @@
 import { useLanguage } from "../store/language";
+import { useTranslation } from "next-i18next";
 
 const FixedMenu = () => {
   const { lang, setLan } = useLanguage();
+  const { i18n } = useTranslation();
+
   return (
     <div
       dir="ltr"
@@ -10,13 +13,16 @@ const FixedMenu = () => {
     *:flex *:items-center *:justify-end *:pe-3 text-defaultGray-500"
     >
       <div
-        onClick={() => setLan()}
+        onClick={() => {
+          i18n.changeLanguage(lang);
+          setLan();
+        }}
         className="w-full hover:w-[130%] bg-defaultBlue-500"
       >
         {lang.toUpperCase()}
       </div>
-      <div className="w-2/3 hover:w-[130%] bg-defaultBlue-400">EN</div>
-      <div className="w-1/3 hover:w-[130%] bg-defaultBlue-300">EN</div>
+      <div className="w-2/3 hover:w-[130%] bg-defaultBlue-400"></div>
+      <div className="w-1/3 hover:w-[130%] bg-defaultBlue-300"></div>
     </div>
   );
 };
