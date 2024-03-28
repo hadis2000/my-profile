@@ -4,7 +4,7 @@ import Introduction from "../../compnent/introduction";
 
 const HeroSection = () => {
   return (
-    <div className="flex lg:flex-row flex-col justify-between gap-7 w-[90%] mx-auto overflow-hidden">
+    <div className="flex lg:flex-row flex-col justify-between gap-7 w-[90%] min-h-screen mx-auto overflow-hidden">
       <Introduction />
       <Exprience />
     </div>
