@@ -4,10 +4,10 @@ import SkillItems from "./skill-item";
 const Skills = () => {
   const { t } = useTranslation();
   return (
-    <div className="px-28 py-10 min-h-screen">
+    <div className="px-28 min-h-screen">
       <SecHeader secName={t("skills")} />
       <div
-        className="border border-red-700 my-10 grid 2xl:grid-cols-5 lg:grid-cols-3
+        className="border border-red-700 my-10 grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3
       md:grid-cols-2 grid-cols-1 gap-14"
       >
         <SkillItems />

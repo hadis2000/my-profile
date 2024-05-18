@@ -16,8 +16,10 @@ export default function Home() {
         dir={lang == "en" ? "rtl" : "ltr"}
         className="min-h-screen bg-gradient-to-r from-defaultPink-50 to-defaultBlue-50 pt-8 relative"
       >
-        <Header />
-        <HeroSection />
+        <div className="min-h-screen">
+          <Header />
+          <HeroSection />
+        </div>
         <FixedMenu />
         <Skills />
       </main>
