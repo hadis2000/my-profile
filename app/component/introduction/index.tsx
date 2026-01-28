@@ -9,7 +9,7 @@ const Introduction = () => {
       <h2 className="text-5xl font-semibold py-5 text-dGray-500 ">
         {t("im")} <span className="text-dPink-500">{t("my-name")}</span>
       </h2>
-      <h3 className="text-4xl font-medium text-dPink-600">{t("into-dev")}</h3>
+      <h3 className="text-4xl font-medium text-dPink-600">{t("headline")}</h3>
       <SearchInput />
     </div>
   );
