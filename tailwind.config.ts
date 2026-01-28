@@ -9,19 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        defaultPink: {
+        dPink: {
           50: "#ECE3F3",
           500: "#C23489",
           600: "#DC677F",
         },
-        defaultBlue: {
+        dBlue: {
           50: "#EAFAFE",
           300: "#E5F2FF",
           400: "#D1E6FC",
           500: "#ACD4FB",
         },
 
-        defaultGray: {
+        dGray: {
           500: "#00011cb1",
         },
       },

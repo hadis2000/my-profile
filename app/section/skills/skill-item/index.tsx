@@ -1,17 +1,18 @@
 import Image from "next/image";
+import emptyImg from "../../../asset/img/empty.png";
 
 const SkillItems = () => {
   return (
-    <div className="border border-teal-900 relative group">
-      <div className="bg-red-400 w-[110%] h-[110%] absolute -top-[5%] -left-[5%] scale-75 group-hover:scale-100"></div>
+    <div className="relative group">
+      <div className="w-[110%] h-[110%] absolute -top-[5%] -left-[5%] scale-75 group-hover:scale-100"></div>
       <div
         className="bg-white rounded-2xl shadow-md py-7 cursor-pointer
-       scale-90 group-hover:scale-95
+       scale-90 group-hover:scale-100 transition-transform duration-300
        flex flex-col items-center justify-center gap-1"
       >
         <Image
           className="bg-green-500 rounded-full mb-3"
-          src=""
+          src={emptyImg}
           alt=""
           width={120}
           height={120}

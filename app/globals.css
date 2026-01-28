@@ -1,174 +1,165 @@
-/* app/globals.css */
 @import "tailwindcss";
 
 /* ==================== */
-/* 1️⃣ رنگ‌های سفارشی به صورت CSS variables */
-/* ==================== */
+/* 1️⃣ رنگ‌های سفارشی */
 :root {
-  --defaultPink-50: #ece3f3;
-  --defaultPink-500: #c23489;
-  --defaultPink-600: #dc677f;
+  --dPink-50: #ece3f3;
+  --dPink-500: #c23489;
+  --dPink-600: #dc677f;
 
-  --defaultBlue-50: #eafafe;
-  --defaultBlue-300: #e5f2ff;
-  --defaultBlue-400: #d1e6fc;
-  --defaultBlue-500: #acd4fb;
+  --dBlue-50: #eafafe;
+  --dBlue-300: #e5f2ff;
+  --dBlue-400: #d1e6fc;
+  --dBlue-500: #acd4fb;
 
-  --defaultGray-500: #00011cb1;
+  --dGray-500: #00011cb1;
 }
 
 /* ==================== */
-/* 2️⃣ کلاس‌های سفارشی بدون حذف رنگ‌های Tailwind */
-/* ==================== */
+/* 2️⃣ کلاس‌های سفارشی، گرادیانت و انیمیشن در یک لایه */
 @layer utilities {
-  /* متن */
-  .text-defaultPink-50 {
-    color: var(--defaultPink-50);
+  /* رنگ متن و پس‌زمینه */
+  .text-dPink-50 {
+    color: var(--dPink-50);
   }
-  .text-defaultPink-500 {
-    color: var(--defaultPink-500);
+  .text-dPink-500 {
+    color: var(--dPink-500);
   }
-  .text-defaultPink-600 {
-    color: var(--defaultPink-600);
-  }
-
-  .text-defaultBlue-50 {
-    color: var(--defaultBlue-50);
-  }
-  .text-defaultBlue-300 {
-    color: var(--defaultBlue-300);
-  }
-  .text-defaultBlue-400 {
-    color: var(--defaultBlue-400);
-  }
-  .text-defaultBlue-500 {
-    color: var(--defaultBlue-500);
+  .text-dPink-600 {
+    color: var(--dPink-600);
   }
 
-  .text-defaultGray-500 {
-    color: var(--defaultGray-500);
+  .text-dBlue-50 {
+    color: var(--dBlue-50);
+  }
+  .text-dBlue-300 {
+    color: var(--dBlue-300);
+  }
+  .text-dBlue-400 {
+    color: var(--dBlue-400);
+  }
+  .text-dBlue-500 {
+    color: var(--dBlue-500);
   }
 
-  /* پس‌زمینه */
-  .bg-defaultPink-50 {
-    background-color: var(--defaultPink-50);
-  }
-  .bg-defaultPink-500 {
-    background-color: var(--defaultPink-500);
-  }
-  .bg-defaultPink-600 {
-    background-color: var(--defaultPink-600);
+  .text-dGray-500 {
+    color: var(--dGray-500);
   }
 
-  .bg-defaultBlue-50 {
-    background-color: var(--defaultBlue-50);
+  .bg-dPink-50 {
+    background-color: var(--dPink-50);
   }
-  .bg-defaultBlue-300 {
-    background-color: var(--defaultBlue-300);
+  .bg-dPink-500 {
+    background-color: var(--dPink-500);
   }
-  .bg-defaultBlue-400 {
-    background-color: var(--defaultBlue-400);
-  }
-  .bg-defaultBlue-500 {
-    background-color: var(--defaultBlue-500);
+  .bg-dPink-600 {
+    background-color: var(--dPink-600);
   }
 
-  .bg-defaultGray-500 {
-    background-color: var(--defaultGray-500);
+  .bg-dBlue-50 {
+    background-color: var(--dBlue-50);
   }
-}
+  .bg-dBlue-300 {
+    background-color: var(--dBlue-300);
+  }
+  .bg-dBlue-400 {
+    background-color: var(--dBlue-400);
+  }
+  .bg-dBlue-500 {
+    background-color: var(--dBlue-500);
+  }
 
-/* ==================== */
-/* 3️⃣ گرادیانت‌ها */
-.bg-gradient-radial {
-  background-image: radial-gradient(var(--tw-gradient-stops));
-}
-.bg-gradient-conic {
-  background-image: conic-gradient(
-    from 180deg at 50% 50%,
-    var(--tw-gradient-stops)
-  );
-}
-.bg-gradient-pink-blue {
-  background: linear-gradient(
-    to right,
-    var(--defaultPink-50),
-    var(--defaultBlue-50)
-  );
-}
+  .bg-dGray-500 {
+    background-color: var(--dGray-500);
+  }
 
-/* ==================== */
-/* 4️⃣ keyframes و animation */
-@keyframes width {
-  0% {
-    width: 0%;
+  /* گرادیانت */
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
   }
-  100% {
-    width: 50%;
+  .bg-gradient-conic {
+    background-image: conic-gradient(
+      from 180deg at 50% 50%,
+      var(--tw-gradient-stops)
+    );
   }
-}
-@keyframes width100 {
-  0% {
-    width: 0%;
+  .bg-gradient-pink-blue {
+    background: linear-gradient(to right, var(--dPink-50), var(--dBlue-50));
   }
-  100% {
-    width: 100%;
-  }
-}
-@keyframes headerAnim {
-  0% {
-    width: 40%;
-    opacity: 0;
-  }
-  100% {
-    width: 90%;
-    opacity: 1;
-  }
-}
-@keyframes translateX {
-  0%,
-  100% {
-    left: 45%;
-  }
-  50% {
-    left: 50%;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rollback {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
 
-.animate-width {
-  animation: width 0.3s linear;
-}
-.animate-width100 {
-  animation: width100 0.5s linear;
-}
-.animate-headerAnim {
-  animation: headerAnim 2s linear;
-}
-.animate-translateX {
-  animation: translateX 3s infinite;
-}
-.animate-spin-slow {
-  animation: spin 50s linear infinite;
-}
-.animate-spin-moon {
-  animation: rollback 50s linear infinite;
-}
-.animate-rotate {
-  animation: rotate 7s infinite;
+  /* keyframes */
+  @keyframes width {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  @keyframes width100 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes headerAnim {
+    0% {
+      width: 40%;
+      opacity: 0;
+    }
+    100% {
+      width: 90%;
+      opacity: 1;
+    }
+  }
+  @keyframes translateX {
+    0%,
+    100% {
+      left: 45%;
+    }
+    50% {
+      left: 50%;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rollback {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  /* animation کلاس‌ها */
+  .animate-width {
+    animation: width 0.3s linear;
+  }
+  .animate-width100 {
+    animation: width100 0.5s linear;
+  }
+  .animate-headerAnim {
+    animation: headerAnim 2s linear;
+  }
+  .animate-translateX {
+    animation: translateX 3s infinite;
+  }
+  .animate-spin-slow {
+    animation: rotate 50s linear infinite;
+  }
+  .animate-spin-moon {
+    animation: rollback 50s linear infinite;
+  }
+  .animate-rotate {
+    animation: rotate 7s infinite;
+  }
 }

@@ -14,7 +14,7 @@ export default function Home() {
     <I18nextProvider i18n={i18n} defaultNS={"translation"}>
       <main
         dir={lang == "en" ? "rtl" : "ltr"}
-        className="min-h-screen bg-gradient-pink-blue pt-8 relative"
+        className="min-h-screen pt-8 relative"
       >
         <div className="min-h-screen">
           <Header />

@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <body className={myFont.className}>{children}</body>
+      <body className={`bg-gradient-pink-blue ${myFont.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
