@@ -1,4 +1,4 @@
-import SecHeader from "@/app/compnent/sec-header";
+import SecHeader from "@/app/component/sec-header";
 import { useTranslation } from "next-i18next";
 import SkillItems from "./skill-item";
 const Skills = () => {

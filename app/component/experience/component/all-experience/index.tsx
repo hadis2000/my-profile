@@ -1,6 +1,6 @@
 import ExItem from "./ex-item";
 
-const AllExpriences = () => {
+const AllExperiences = () => {
   const ex = [
     {
       name: "react",
@@ -18,7 +18,7 @@ const AllExpriences = () => {
       color: "text-[#AB1B1F]",
     },
     {
-      name: "bootsrtrap",
+      name: "bootstrap",
       className: "top-[95%] left-[41%] ",
     },
     {
@@ -48,4 +48,4 @@ const AllExpriences = () => {
   );
 };
 
-export default AllExpriences;
+export default AllExperiences;

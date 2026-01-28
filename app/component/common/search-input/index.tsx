@@ -9,7 +9,7 @@ const SearchInput = () => {
         className="rounded-full mx-2 focus:outline-none p-1"
         placeholder={`${t("search")}...`}
       />
-      <button className="bg-defaultBlue-500 px-5 py-1 m-[1px] rounded-full">
+      <button className="bg-defaultBlue-500 px-5 py-1 m-px rounded-full">
         {t("go")}
       </button>
     </div>

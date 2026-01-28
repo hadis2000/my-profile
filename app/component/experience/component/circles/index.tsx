@@ -2,7 +2,7 @@ import Image from "next/image";
 import Circle from "./circle";
 import catImg from "../../../../asset/img/cat.png";
 
-const Cirlces = () => {
+const Circles = () => {
   return (
     <>
       <Circle left="left-[46%] animate-translateX" />
@@ -19,4 +19,4 @@ const Cirlces = () => {
   );
 };
 
-export default Cirlces;
+export default Circles;
