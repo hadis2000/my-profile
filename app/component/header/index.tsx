@@ -14,6 +14,11 @@ const Header = () => {
       className="relative animate-headerAnim w-[90%] h-20 bg-white rounded-3xl mx-auto px-[2%] shadow-lg
     flex md:flex-row flex-col-reverse items-center md:justify-between justify-center gap-2"
     >
+      <div className="flex gap-7 h-fit">
+        {items.map((itemName, index) => (
+          <HeaderItem key={index} name={itemName} />
+        ))}
+      </div>
       <div className="flex justify-between gap-3 *:cursor-pointer">
         <Tooltip text={t("linkedin")}>
           <Image src={Linkedin} alt={t("linkedin")} width={30} height={30} />
@@ -24,11 +29,6 @@ const Header = () => {
         <Tooltip text={t("telegram")}>
           <Image src={Telegram} alt={t("telegram")} width={30} height={30} />
         </Tooltip>
-      </div>
-      <div className="flex gap-7 h-fit">
-        {items.map((itemName, index) => (
-          <HeaderItem key={index} name={itemName} />
-        ))}
       </div>
     </header>
   );
