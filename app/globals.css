@@ -114,13 +114,22 @@
       opacity: 1;
     }
   }
+  @keyframes translateX-reverse {
+    0%,
+    100% {
+      left: 40%;
+    }
+    50% {
+      left: 60%;
+    }
+  }
   @keyframes translateX {
     0%,
     100% {
-      left: 45%;
+      left: 60%;
     }
     50% {
-      left: 50%;
+      left: 40%;
     }
   }
   @keyframes rotate {
@@ -151,7 +160,10 @@
     animation: headerAnim 2s linear;
   }
   .animate-translateX {
-    animation: translateX 3s infinite;
+    animation: translateX 5s infinite;
+  }
+  .animate-translateX-reverse {
+    animation: translateX-reverse 5s infinite;
   }
   .animate-spin-slow {
     animation: rotate 50s linear infinite;

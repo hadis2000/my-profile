@@ -5,9 +5,9 @@ import catImg from "../../../../asset/img/cat.png";
 const Circles = () => {
   return (
     <>
-      <Circle left="left-[46%] animate-translateX" />
+      <Circle className="animate-translateX-reverse" />
       <Circle />
-      <Circle left="left-[54%] animate-translateX" />
+      <Circle className="animate-translateX" />
       <Image
         className="absolute left-[50%] -translate-x-[50%] top-[60%] -translate-y-[50%]"
         src={catImg}
