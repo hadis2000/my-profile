@@ -11,7 +11,7 @@ const Header = () => {
   const items: string[] = t("header", { returnObjects: true }) as string[];
   return (
     <header
-      className="relative animate-headerAnim w-[90%] h-20 bg-white rounded-3xl mx-auto px-[2%] shadow-lg
+      className="sticky top-3 z-50 animate-headerAnim w-[90%] h-20 bg-white rounded-3xl mx-auto px-[2%] shadow-lg
     flex md:flex-row flex-col-reverse items-center md:justify-between justify-center gap-2"
     >
       <div className="flex gap-7 h-fit">

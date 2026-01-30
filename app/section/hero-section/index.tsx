@@ -3,7 +3,7 @@ import Introduction from "../../component/introduction";
 
 const HeroSection = () => {
   return (
-    <div className="flex lg:flex-row flex-col justify-between gap-7 w-[90%]  mx-auto overflow-hidden">
+    <div className="flex lg:flex-row flex-col justify-between gap-7 w-[90%]  mx-auto overflow-hidden min-h-screen">
       <Introduction />
       <Experience />
     </div>

@@ -16,10 +16,8 @@ export default function Home() {
         dir={lang == "en" ? "rtl" : "ltr"}
         className="min-h-screen pt-8 relative"
       >
-        <div className="min-h-screen">
-          <Header />
-          <HeroSection />
-        </div>
+        <Header />
+        <HeroSection />
         <FixedMenu />
         <Skills />
       </main>
