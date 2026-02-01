@@ -8,6 +8,6 @@
   "telegram": "Telegram",
   "instagram": "Instagram",
   "linkdin": "Linkdin",
-  "skills": "skills",
-  "header": ["home", "about", "skills", "works", "contact us"]
+  "projects": "projects",
+  "header": ["home", "about", "projects", "works", "contact us"]
 }

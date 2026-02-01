@@ -11,7 +11,7 @@ const settings = [
   "w-14 top-14 left-14 group-hover:-top-16",
 ];
 
-const SkillItems = () => {
+const ProjectItems = () => {
   return (
     <div className="relative group group-hover/item:blur-[3px] hover:blur-none">
       <Circle className={settings[0]} />
@@ -40,4 +40,4 @@ const SkillItems = () => {
   );
 };
 
-export default SkillItems;
+export default ProjectItems;
