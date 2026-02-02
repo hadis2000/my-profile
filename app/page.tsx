@@ -6,6 +6,7 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import HeroSection from "./section/hero-section";
 import Projects from "./section/projects";
+import Skills from "./section/skills";
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -20,6 +21,7 @@ export default function Home() {
         <HeroSection />
         <FixedMenu />
         <Projects />
+        <Skills />
       </main>
     </I18nextProvider>
   );

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Circle from "./circle";
 import catImg from "../../../../asset/img/cat.png";
+import CustomImage from "@/app/component/custom-image";
 
 const Circles = () => {
   return (
@@ -8,7 +8,7 @@ const Circles = () => {
       <Circle className="animate-translateX-reverse" />
       <Circle />
       <Circle className="animate-translateX" />
-      <Image
+      <CustomImage
         className="absolute left-[50%] -translate-x-[50%] top-[60%] -translate-y-[50%]"
         src={catImg}
         alt="catImg"

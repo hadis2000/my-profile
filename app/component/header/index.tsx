@@ -1,10 +1,10 @@
-import Image from "next/image";
 import HeaderItem from "./header-item";
 import Linkedin from "../../asset/img/2.png";
 import Instagram from "../../asset/img/3.png";
 import Telegram from "../../asset/img/5.png";
 import Tooltip from "../common/tooltip";
 import { useTranslation } from "react-i18next";
+import CustomImage from "../custom-image";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -21,13 +21,28 @@ const Header = () => {
       </div>
       <div className="flex justify-between gap-3 *:cursor-pointer">
         <Tooltip text={t("linkedin")}>
-          <Image src={Linkedin} alt={t("linkedin")} width={30} height={30} />
+          <CustomImage
+            src={Linkedin}
+            alt={t("linkedin")}
+            width={30}
+            height={30}
+          />
         </Tooltip>
         <Tooltip text={t("instagram")}>
-          <Image src={Instagram} alt={t("instagram")} width={30} height={30} />
+          <CustomImage
+            src={Instagram}
+            alt={t("instagram")}
+            width={30}
+            height={30}
+          />
         </Tooltip>
         <Tooltip text={t("telegram")}>
-          <Image src={Telegram} alt={t("telegram")} width={30} height={30} />
+          <CustomImage
+            src={Telegram}
+            alt={t("telegram")}
+            width={30}
+            height={30}
+          />
         </Tooltip>
       </div>
     </header>

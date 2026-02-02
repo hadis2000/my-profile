@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CustomImage from "@/app/component/custom-image";
 import emptyImg from "../../../asset/img/empty.png";
 import Circle from "./circle";
 
@@ -26,7 +26,7 @@ const ProjectItems = () => {
        scale-90 group-hover:scale-100 transition-transform duration-500 delay-300
        flex flex-col items-center justify-center gap-1"
       >
-        <Image
+        <CustomImage
           className="bg-green-500 rounded-full mb-3"
           src={emptyImg}
           alt=""
