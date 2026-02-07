@@ -5,7 +5,7 @@ import Item from "./item";
 const Skills = () => {
   const { t } = useTranslation();
   return (
-    <div className="px-28 min-h-screen">
+    <div className="px-28 5min-h-screen">
       <SecHeader secName={t("skills")} />
       <div className="w-full flex gap-5 py-7 overflow-x-auto">
         <Item />
