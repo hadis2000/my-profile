@@ -1,19 +1,29 @@
 import CustomImage from "@/app/component/custom-image";
 
-const Item = () => {
+type SkillItemType = {
+  icon?: string;
+  nameEn?: string;
+  nameFa?: string;
+  years?: number;
+  index: number;
+};
+
+const Item = ({ years, nameEn, index }: SkillItemType) => {
   return (
     <div
-      className="group w-32 h-32 mx-auto rounded-full shrink-0 overflow-hidden relative 
-    flex items-center justify-center shadow"
-      data-aos="fade-in"
+      className="group w-28 h-28 mx-auto rounded-full shrink-0 overflow-hidden relative 
+    flex items-center justify-center shadow "
+      key={index}
+      data-aos="fade-right"
+      data-aos-delay={index * 200} // هر آیتم 200ms بعد از قبلی
     >
-      <CustomImage className="hover:blur-xs w-full h-full rounded-full" />
+      <CustomImage className="group-hover:blur-xs w-full h-full rounded-full" />
       <div
-        className="absolute left-[50%] top-[50%] -translate-[50%] 
-        text-[0px] group-hover:text-lg transition-all cursor-default"
+        className="absolute left-[50%] top-[50%] -translate-[50%] truncate text-center
+        text-[0px] group-hover:text-lg transition-all cursor-default duration-500  "
       >
-        <p>REACT</p>
-        <p>2 years</p>
+        <p className="">{nameEn}</p>
+        <span>{years} years</span>
       </div>
       {/* <div
         className="absolute inset-0 rounded-full bg-white/65 blur-md 

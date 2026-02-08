@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 type secHeaderType = {
-  secName: string;
+  secName: ReactNode;
 };
 
 const SecHeader = ({ secName }: secHeaderType) => {
