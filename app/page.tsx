@@ -7,7 +7,7 @@ import i18n from "./i18n";
 import HeroSection from "./section/hero-section";
 import Projects from "./section/projects";
 import Skills from "./section/skills";
-import Test from "./section/test";
+// import Test from "./section/test";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -32,7 +32,7 @@ export default function Home() {
         <FixedMenu />
         <Projects />
         <Skills />
-        <Test />
+        {/* <Test /> */}
       </main>
     </I18nextProvider>
   );

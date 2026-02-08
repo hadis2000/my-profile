@@ -1,6 +1,6 @@
 import SecHeader from "@/app/component/sec-header";
 import { useTranslation } from "react-i18next";
-import Item from "./item";
+import Item from "./item copy";
 import { skills } from "./data";
 import { FaKey } from "react-icons/fa";
 
