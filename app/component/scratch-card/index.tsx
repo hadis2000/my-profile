@@ -60,7 +60,7 @@ export default function ScratchCard({
         ref={canvasRef}
         width={width}
         height={height}
-        className="absolute inset-0 cursor-pointer rounded-lg"
+        className="absolute inset-0 cursor-pointer rounded-xl"
         onMouseDown={startDrawing}
         onMouseUp={endDrawing}
         onMouseMove={draw}
