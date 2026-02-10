@@ -6,9 +6,10 @@ const Ring = ({ percent = 0 }: Pick<SkillItemType, "percent">) => {
   const offset = circumference - (percent / 100) * circumference;
 
   const getColor = () => {
-    if (percent < 40) return "var(--dPink-600)";
-    if (percent < 70) return "var(--dPink-500)";
-    return "var(--dBlue-500)";
+    if (percent < 30) return "var(--dBlue-300)";
+    if (percent < 60) return "var(--dBlue-400)";
+    if (percent < 80) return "var(--dBlue-500)";
+    return "var(--dBlue-50)";
   };
 
   return (
