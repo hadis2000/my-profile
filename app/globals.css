@@ -149,6 +149,15 @@
     }
   }
 
+  @keyframes rotate-text-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   /* animation کلاس‌ها */
   .animate-width {
     animation: width 0.3s linear;
@@ -173,5 +182,9 @@
   }
   .animate-rotate {
     animation: rotate 7s infinite;
+  }
+  .rotate-text {
+    transform-origin: 40px 40px; /* مرکز دایره */
+    animation: rotate-text-animation 12s linear infinite;
   }
 }

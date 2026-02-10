@@ -12,7 +12,7 @@ const Item = ({ years, title, imgUrl, percent }: SkillItemType) => {
   return (
     <div className="relative w-20 h-20 mx-auto">
       {/* Progress Ring */}
-      <Ring percent={percent} />
+      <Ring percent={percent} title={title} years={years} />
 
       {/* Content */}
       <div
