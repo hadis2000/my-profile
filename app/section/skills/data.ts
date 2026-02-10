@@ -1,7 +1,7 @@
 export const groupedSkills = {
   "Frontend Frameworks": [
-    { imgUrl: "FaReact", title: "React", years: 3 },
-    { imgUrl: "SiNextdotjs", title: "Next.js", years: 2 },
+    { imgUrl: "FaReact", title: "React", years: 3, percent: 70 },
+    { imgUrl: "SiNextdotjs", title: "Next.js", years: 2, percent: 50 },
   ],
   "CSS & Styling": [
     { imgUrl: "SiTailwindcss", title: "Tailwind CSS", years: 3 },

@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from "react";
 
 type ScratchProps = {
   children: React.ReactNode;
+  className?: string;
 };
 
-export default function ScratchCard({ children }: ScratchProps) {
+export default function ScratchCard({ children, className }: ScratchProps) {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [size, setSize] = useState({ width: 0, height: 0 });
@@ -53,11 +54,11 @@ export default function ScratchCard({ children }: ScratchProps) {
   };
 
   return (
-    <div className="relative inline-block">
+    <div className={`relative inline-block`}>
       {/* children determines real width/height */}
       <div
         ref={wrapperRef}
-        className="flex flex-wrap items-center justify-center gap-2 p-3"
+        className={`flex flex-wrap items-center justify-center gap-2 p-3 ${className}`}
       >
         {children}
       </div>

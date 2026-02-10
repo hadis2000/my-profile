@@ -29,8 +29,8 @@ const Skills = () => {
           >
             <h2 className="text-xl font-bold mb-4">{category}</h2>
             <ScratchCard>
-              {skills.map((skill) => (
-                <Item {...skill} />
+              {skills.map((skill, idx) => (
+                <Item key={idx} {...skill} />
               ))}
             </ScratchCard>
           </div>
