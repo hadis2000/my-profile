@@ -28,7 +28,7 @@ const Skills = () => {
             data-aos-delay={index * 200}
           >
             <h2 className="text-xl font-bold mb-4">{category}</h2>
-            <ScratchCard width={skills?.length * 80}>
+            <ScratchCard>
               {skills.map((skill) => (
                 <Item {...skill} />
               ))}

@@ -2,37 +2,41 @@ import { useEffect, useRef, useState } from "react";
 
 type ScratchProps = {
   children: React.ReactNode;
-  width?: number;
-  height?: number;
 };
 
-export default function ScratchCard({
-  children,
-  width = 300,
-  height = 120,
-}: ScratchProps) {
+export default function ScratchCard({ children }: ScratchProps) {
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [size, setSize] = useState({ width: 0, height: 0 });
   const [isDrawing, setIsDrawing] = useState(false);
 
+  // Measure content size
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el) return;
+
+    const rect = el.getBoundingClientRect();
+    setSize({ width: rect.width, height: rect.height });
+  }, [children]);
+
+  // Draw gray layer
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || size.width === 0) return;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Full gray cover
-    ctx.fillStyle = "#bcbcbc";
+    ctx.fillStyle = "#bcbcbca4";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Important: set mode so drawing will erase
     ctx.globalCompositeOperation = "destination-out";
-  }, []);
+  }, [size]);
 
   const startDrawing = () => setIsDrawing(true);
   const endDrawing = () => setIsDrawing(false);
 
-  const draw = (e: React.MouseEvent<HTMLCanvasElement, MouseEvent>) => {
+  const draw = (e: React.MouseEvent<HTMLCanvasElement>) => {
     if (!isDrawing) return;
 
     const canvas = canvasRef.current;
@@ -49,23 +53,28 @@ export default function ScratchCard({
   };
 
   return (
-    <div className="relative" style={{ width, height }}>
-      {/* Hidden text */}
-      <div className="absolute inset-0 flex items-center justify-center text-xl font-bold">
+    <div className="relative inline-block">
+      {/* children determines real width/height */}
+      <div
+        ref={wrapperRef}
+        className="flex flex-wrap items-center justify-center gap-2 p-3"
+      >
         {children}
       </div>
 
-      {/* Scratch layer */}
-      <canvas
-        ref={canvasRef}
-        width={width}
-        height={height}
-        className="absolute inset-0 cursor-pointer rounded-xl"
-        onMouseDown={startDrawing}
-        onMouseUp={endDrawing}
-        onMouseMove={draw}
-        onMouseLeave={endDrawing}
-      />
+      {/* Canvas overlays but matches exact content size */}
+      {size.width > 0 && (
+        <canvas
+          ref={canvasRef}
+          width={size.width}
+          height={size.height}
+          className="absolute inset-0 cursor-pointer rounded-xl"
+          onMouseDown={startDrawing}
+          onMouseUp={endDrawing}
+          onMouseMove={draw}
+          onMouseLeave={endDrawing}
+        />
+      )}
     </div>
   );
 }
