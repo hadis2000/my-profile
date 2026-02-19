@@ -6,8 +6,8 @@
   "search": "Search",
   "go": "Go",
   "telegram": "Telegram",
-  "instagram": "Instagram",
-  "linkdin": "Linkdin",
+  "github": "Github",
+  "linkedin": "linkedin",
   "projects": "projects",
   "header": ["home", "about", "projects", "works", "contact us"]
 }
