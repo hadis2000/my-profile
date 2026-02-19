@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 const myFont = localFont({ src: "./asset/font/KaushanScript-Regular.otf" });
 
 export const metadata: Metadata = {
-  title: "پروفایل من",
+  title: "Hadiseh Hosseini",
   description: "رزومه ی من",
 };
 
