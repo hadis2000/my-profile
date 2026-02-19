@@ -4,8 +4,8 @@ import Circles from "./component/circles";
 const Experience = () => {
   return (
     <div
-      className="relative lg:w-[54%] w-full lg:mx-0 mx-auto
-    h-115 lg:my-10 my-0"
+      className="relative lg:w-[54%] sm:w-full w-86 lg:mx-0 mx-auto
+    sm:h-115 h-90 lg:my-10 my-0"
     >
       <Circles />
       <AllExperiences />
