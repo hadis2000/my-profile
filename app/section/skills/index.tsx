@@ -10,7 +10,7 @@ import ScratchCard from "@/app/component/scratch-card";
 const Skills = () => {
   const { t } = useTranslation();
   return (
-    <div className="px-29 min-h-screen">
+    <section id="skills" className="px-29 min-h-screen">
       <SecHeader
         secName={
           <span className="flex gap-2 w-fit mx-auto">
@@ -42,7 +42,7 @@ const Skills = () => {
           <Item {...item} index={index} />
         ))}
       </div> */}
-    </div>
+    </section>
   );
 };
 
