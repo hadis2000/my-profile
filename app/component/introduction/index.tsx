@@ -1,4 +1,4 @@
-import SearchInput from "../common/search-input";
+// import SearchInput from "../common/search-input";
 import { useTranslation } from "next-i18next";
 
 const Introduction = () => {
@@ -10,7 +10,7 @@ const Introduction = () => {
         {t("im")} <span className="text-dPink-500">{t("my-name")}</span>
       </h2>
       <h3 className="text-4xl font-medium text-dPink-600">{t("headline")}</h3>
-      <SearchInput />
+      {/* <SearchInput /> */}
     </div>
   );
 };

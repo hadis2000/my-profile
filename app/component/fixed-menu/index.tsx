@@ -17,12 +17,12 @@ const FixedMenu = () => {
           i18n.changeLanguage(lang);
           setLan();
         }}
-        className="w-full hover:w-[130%] bg-dBlue-500"
+        className="w-1/3 hover:w-2/3 bg-dBlue-500"
       >
         {lang.toUpperCase()}
       </div>
-      <div className="w-2/3 hover:w-[130%] bg-dBlue-400"></div>
-      <div className="w-1/3 hover:w-[130%] bg-dBlue-300"></div>
+      {/* <div className="w-2/3 hover:w-[130%] bg-dBlue-400"></div>
+      <div className="w-1/3 hover:w-[130%] bg-dBlue-300"></div> */}
     </div>
   );
 };
