@@ -9,7 +9,8 @@ const Circles = () => {
       <Circle />
       <Circle className="animate-translateX" />
       <CustomImage
-        className="absolute left-[50%] -translate-x-[50%] top-[60%] -translate-y-[50%]"
+        className="absolute left-[50%] -translate-x-[50%] top-[60%] -translate-y-[50%] 
+        sm:w-[400] sm:h-[400] w-[300] h-[300]"
         src={catImg}
         alt="catImg"
         width={400}
