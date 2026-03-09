@@ -33,8 +33,8 @@ const ProjectItems = () => {
           width={120}
           height={120}
         />
-        <h3 className="text-lg font-extrabold uppercase">react</h3>
-        <h3 className="text-lg font-medium">2 years</h3>
+        <h3 className="text-lg font-extrabold uppercase">-</h3>
+        <h3 className="text-lg font-medium">- years</h3>
       </div>
     </div>
   );
