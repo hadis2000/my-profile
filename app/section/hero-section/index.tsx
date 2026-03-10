@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex lg:flex-row flex-col justify-between sm:gap-7 w-[90%]  mx-auto overflow-hidden sm:min-h-screen"
+      className="flex lg:flex-row flex-col justify-between sm:gap-7 mx-auto overflow-hidden"
     >
       <Introduction />
       <Experience />

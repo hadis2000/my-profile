@@ -23,11 +23,11 @@ const ProjectItems = () => {
 
       <div
         className="bg-white rounded-2xl shadow-md py-7 cursor-pointer
-       scale-90 group-hover:scale-100 transition-transform duration-500 delay-300
+       scale-100 transition-transform duration-500 delay-300
        flex flex-col items-center justify-center gap-1"
       >
         <CustomImage
-          className="bg-green-500 rounded-full mb-3"
+          className="rounded-full mb-3"
           src={emptyImg}
           alt=""
           width={120}

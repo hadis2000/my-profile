@@ -4,7 +4,7 @@ import ProjectItems from "./project-item";
 const Projects = () => {
   const { t } = useTranslation();
   return (
-    <section id="projects" className="px-28 min-h-screen">
+    <section id="projects">
       <SecHeader secName={t("projects")} />
       <div
         className="my-5 grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3
