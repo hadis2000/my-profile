@@ -7,8 +7,8 @@ const Projects = () => {
     <section id="projects">
       <SecHeader secName={t("projects")} />
       <div
-        className="my-5 grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3
-      md:grid-cols-2 grid-cols-1 gap-3 group/item"
+        className="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3
+      md:grid-cols-2 grid-cols-1 group/item gap-7 pt-8"
       >
         <ProjectItems key={1} />
         <ProjectItems key={2} />

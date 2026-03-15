@@ -25,7 +25,7 @@ export default function Home() {
     <I18nextProvider i18n={i18n} defaultNS={"translation"}>
       <main
         dir={lang == "en" ? "rtl" : "ltr"}
-        className="min-h-screen pt-8 relative max-w-350 mx-auto sm:px-24 px-5"
+        className="min-h-screen pt-8 relative max-w-350 mx-auto sm:px-24 px-5 flex flex-col gap-10"
       >
         <Header />
         <HeroSection />
