@@ -1,18 +1,19 @@
-import emptyImg from "../../../../asset/img/empty.png";
-import CustomImage from "@/app/component/custom-image";
+import TechIcon, { TechType } from "./tech-icon";
 
 type CircleProps = {
-  src?: string;
+  tech: TechType;
   className?: string;
 };
 
-const Circle = ({ src, className }: CircleProps) => {
+const Circle = ({ tech, className }: CircleProps) => {
   return (
-    <CustomImage
-      alt=""
-      src={src || emptyImg}
-      className={`shadow-2xl aspect-square absolute rounded-full group-hover:z-50 transition-all duration-700 ${className || ""}`}
-    />
+    <div
+      className={`shadow-2xl aspect-square absolute rounded-full group-hover:z-50 transition-all duration-700
+        bg-white flex items-center justify-center 
+        ${className || ""}`}
+    >
+      <TechIcon tech={tech} />
+    </div>
   );
 };
 
